@@ -4,12 +4,13 @@
 #include "oled.h"
 #include "bit_settings.h"
 
+#define I2C_CLK 400000
 
 void I2CInit(void){
-    unsigned int c = 400000; 
+    //unsigned int c = 400000; 
 	SSPCON1 = 0b00101000;
     SSPCON2 = 0x00;
-    SSPADD = (_XTAL_FREQ/(4*c))-1;
+    SSPADD = (_XTAL_FREQ/(4*I2C_CLK))-1;
     SSPSTAT = 0x00;
     TRISCbits.TRISC3=1;
     TRISCbits.TRISC4=1;
@@ -25,7 +26,11 @@ void I2CSend(char dat) {
 	while ((SSPCON2 & 0b00011111 ) || ( SSPSTAT & 0b00000100 ) );
 }
 
-void OLED_Init(char address) {
+void OLED_Init(char address) {  
+    
+    TRISCbits.TRISC3=1;//i2c
+    TRISCbits.TRISC4=1;//i2c
+  
     _address = address << 1;
     I2CInit();
     __delay_us(1);

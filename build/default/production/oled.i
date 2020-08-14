@@ -10453,12 +10453,12 @@ char _address = 0x78;
 void OLED_Init(char address);
 void OLED_command(char command);
 void OLED_data(char data);
-void OLED_write();
-void OLED_clear();
-void OLED_invert();
+void OLED_write(void);
+void OLED_clear(void);
+void OLED_invert(void);
 void OLED_rscroll(char start, char stop);
 void OLED_lscroll(char start, char stop);
-void OLED_stopscroll();
+void OLED_stopscroll(void);
 void OLED_pixel(short x, short y, char color);
 void OLED_char(char character, short x, short y);
 void OLED_string(char* str, short x, short y);
@@ -10488,11 +10488,12 @@ void OLED_string(char* str, short x, short y);
 
 
 
+
 void I2CInit(void){
-    unsigned int c = 400000;
+
  SSPCON1 = 0b00101000;
     SSPCON2 = 0x00;
-    SSPADD = (32000000/(4*c))-1;
+    SSPADD = (32000000/(4*400000))-1;
     SSPSTAT = 0x00;
     TRISCbits.TRISC3=1;
     TRISCbits.TRISC4=1;
@@ -10509,6 +10510,10 @@ void I2CSend(char dat) {
 }
 
 void OLED_Init(char address) {
+
+    TRISCbits.TRISC3=1;
+    TRISCbits.TRISC4=1;
+
     _address = address << 1;
     I2CInit();
     _delay((unsigned long)((1)*(32000000/4000000.0)));

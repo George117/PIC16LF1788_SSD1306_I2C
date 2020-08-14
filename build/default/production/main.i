@@ -10444,12 +10444,12 @@ char _address = 0x78;
 void OLED_Init(char address);
 void OLED_command(char command);
 void OLED_data(char data);
-void OLED_write();
-void OLED_clear();
-void OLED_invert();
+void OLED_write(void);
+void OLED_clear(void);
+void OLED_invert(void);
 void OLED_rscroll(char start, char stop);
 void OLED_lscroll(char start, char stop);
-void OLED_stopscroll();
+void OLED_stopscroll(void);
 void OLED_pixel(short x, short y, char color);
 void OLED_char(char character, short x, short y);
 void OLED_string(char* str, short x, short y);
@@ -10462,12 +10462,10 @@ void main(void)
     Configure_Clock();
 
 
-    TRISCbits.TRISC3=1;
-    TRISCbits.TRISC4=1;
 
     OLED_Init(0x3C);
     OLED_clear();
-    OLED_string("Hello World!", 0, 0);
+    OLED_string("Hello World69!", 0, 0);
     OLED_write();
 
     while(1){
