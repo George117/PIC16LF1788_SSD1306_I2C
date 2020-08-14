@@ -3,8 +3,14 @@
 [d edition pro ]
 [d chip 16LF1788 ]
 [d frameptr 6 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
 "10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
 "6 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\pic\__eeprom.c
@@ -13,11 +19,55 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "15 D:\Git\PIC16LF1788_SSD1306_I2C\config.c
 [v _IO_First_Init IO_First_Init `(v  1 e 1 0 ]
-"30
+"32
 [v _Configure_Clock Configure_Clock `(v  1 e 1 0 ]
-"12 D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+"13 D:\Git\PIC16LF1788_SSD1306_I2C\main.c
 [v _main main `(v  1 e 1 0 ]
-"429 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h
+"8 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
+[v _I2CInit I2CInit `(v  1 e 1 0 ]
+"17
+[v _I2CStart I2CStart `(v  1 e 1 0 ]
+"20
+[v _I2CStop I2CStop `(v  1 e 1 0 ]
+"23
+[v _I2CSend I2CSend `(v  1 e 1 0 ]
+"28
+[v _OLED_Init OLED_Init `(v  1 e 1 0 ]
+"59
+[v _OLED_command OLED_command `(v  1 e 1 0 ]
+"75
+[v _OLED_write OLED_write `(v  1 e 1 0 ]
+"93
+[v _OLED_clear OLED_clear `(v  1 e 1 0 ]
+"127
+[v _OLED_char OLED_char `(v  1 e 1 0 ]
+"135
+[v _OLED_string OLED_string `(v  1 e 1 0 ]
+"81 D:\Git\PIC16LF1788_SSD1306_I2C/oled.h
+[v oled@OLED_characters OLED_characters `DC[475]uc  1 s 475 OLED_characters ]
+"179
+[v _OLED_buffer OLED_buffer `[512]uc  1 s 512 OLED_buffer ]
+[v oled@OLED_buffer OLED_buffer `[512]uc  1 s 512 OLED_buffer ]
+"214
+[v __address _address `uc  1 e 1 0 ]
+[s S142 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h
+[s S151 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S156 . 1 `S142 1 . 1 0 `S151 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES156  1 e 1 @11 ]
+"429
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
 "499
 [v _PORTB PORTB `VEuc  1 e 1 @13 ]
@@ -29,9 +79,23 @@
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1335
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S30 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1355
+[s S39 . 1 `uc 1 TRISC 1 0 :8:0 
+]
+[u S41 . 1 `S30 1 . 1 0 `S39 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES41  1 e 1 @142 ]
 "1849
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
-[s S84 . 1 `uc 1 SCS0 1 0 :1:0 
+[s S174 . 1 `uc 1 SCS0 1 0 :1:0 
 `uc 1 SCS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 IRCF0 1 0 :1:3 
@@ -41,13 +105,13 @@
 `uc 1 SPLLEN 1 0 :1:7 
 ]
 "1929
-[s S93 . 1 `uc 1 SCS 1 0 :2:0 
+[s S183 . 1 `uc 1 SCS 1 0 :2:0 
 `uc 1 . 1 0 :1:2 
 `uc 1 IRCF 1 0 :4:3 
 ]
-[u S97 . 1 `S84 1 . 1 0 `S93 1 . 1 0 ]
-[v _OSCCONbits OSCCONbits `VES97  1 e 1 @153 ]
-[s S30 . 1 `uc 1 LATC0 1 0 :1:0 
+[u S187 . 1 `S174 1 . 1 0 `S183 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES187  1 e 1 @153 ]
+[s S76 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -57,28 +121,188 @@
 `uc 1 LATC7 1 0 :1:7 
 ]
 "2491
-[s S39 . 1 `uc 1 LATC 1 0 :8:0 
+[s S85 . 1 `uc 1 LATC 1 0 :8:0 
 ]
-[u S41 . 1 `S30 1 . 1 0 `S39 1 . 1 0 ]
-[v _LATCbits LATCbits `VES41  1 e 1 @270 ]
+[u S87 . 1 `S76 1 . 1 0 `S85 1 . 1 0 ]
+[v _LATCbits LATCbits `VES87  1 e 1 @270 ]
 "3676
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
 "3741
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "3805
 [v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
-"12 D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+"5150
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"5404
+[v _SSPADD SSPADD `VEuc  1 e 1 @530 ]
+"5912
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @532 ]
+[s S264 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"5929
+[u S273 . 1 `S264 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES273  1 e 1 @532 ]
+"6038
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @533 ]
+"6304
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @534 ]
+[s S242 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"6376
+[u S251 . 1 `S242 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES251  1 e 1 @534 ]
+"13 D:\Git\PIC16LF1788_SSD1306_I2C\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"27
+"36
+} 0
+"75 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
+[v _OLED_write OLED_write `(v  1 e 1 0 ]
+{
+"76
+[v OLED_write@x x `ui  1 a 2 4 ]
+"92
+} 0
+"135
+[v _OLED_string OLED_string `(v  1 e 1 0 ]
+{
+"137
+[v OLED_string@pos pos `s  1 a 2 29 ]
+"139
+[v OLED_string@startx startx `s  1 a 2 27 ]
+"140
+[v OLED_string@starty starty `s  1 a 2 25 ]
+"138
+[v OLED_string@character character `uc  1 a 1 31 ]
+"135
+[v OLED_string@str str `*.25uc  1 p 2 19 ]
+[v OLED_string@x x `s  1 p 2 21 ]
+[v OLED_string@y y `s  1 p 2 23 ]
+"147
+} 0
+"127
+[v _OLED_char OLED_char `(v  1 e 1 0 ]
+{
+[v OLED_char@character character `uc  1 a 1 wreg ]
+"130
+[v OLED_char@offset offset `s  1 a 2 15 ]
+"129
+[v OLED_char@table_offset table_offset `s  1 a 2 13 ]
+"128
+[v OLED_char@_y _y `ui  1 a 2 11 ]
+"131
+[v OLED_char@i i `uc  1 a 1 18 ]
+"127
+[v OLED_char@character character `uc  1 a 1 wreg ]
+[v OLED_char@x x `s  1 p 2 6 ]
+[v OLED_char@y y `s  1 p 2 8 ]
+[v OLED_char@character character `uc  1 a 1 17 ]
+"133
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"93 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
+[v _OLED_clear OLED_clear `(v  1 e 1 0 ]
+{
+"95
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memset.c
+[v _memset memset `(*.39v  1 e 1 0 ]
+{
+"6
+[v memset@s s `*.39uc  1 a 2 12 ]
+"7
+[v memset@k k `ui  1 a 2 10 ]
+"4
+[v memset@dest dest `*.39v  1 p 2 0 ]
+[v memset@c c `i  1 p 2 2 ]
+[v memset@n n `ui  1 p 2 4 ]
+"90
+} 0
+"28 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
+[v _OLED_Init OLED_Init `(v  1 e 1 0 ]
+{
+[v OLED_Init@address address `uc  1 a 1 wreg ]
+[v OLED_Init@address address `uc  1 a 1 wreg ]
+[v OLED_Init@address address `uc  1 a 1 6 ]
+"58
+} 0
+"59
+[v _OLED_command OLED_command `(v  1 e 1 0 ]
+{
+[v OLED_command@command command `uc  1 a 1 wreg ]
+[v OLED_command@command command `uc  1 a 1 wreg ]
+"61
+[v OLED_command@command command `uc  1 a 1 1 ]
+"66
+} 0
+"20
+[v _I2CStop I2CStop `(v  1 e 1 0 ]
+{
+"22
+} 0
+"17
+[v _I2CStart I2CStart `(v  1 e 1 0 ]
+{
+"19
+} 0
+"23
+[v _I2CSend I2CSend `(v  1 e 1 0 ]
+{
+[v I2CSend@dat dat `uc  1 a 1 wreg ]
+[v I2CSend@dat dat `uc  1 a 1 wreg ]
+[v I2CSend@dat dat `uc  1 a 1 0 ]
+"26
+} 0
+"8
+[v _I2CInit I2CInit `(v  1 e 1 0 ]
+{
+"9
+[v I2CInit@c c `ui  1 a 2 11 ]
+"16
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 2 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 1 ]
+[v ___aldiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
 } 0
 "15 D:\Git\PIC16LF1788_SSD1306_I2C\config.c
 [v _IO_First_Init IO_First_Init `(v  1 e 1 0 ]
 {
-"28
-} 0
 "30
+} 0
+"32
 [v _Configure_Clock Configure_Clock `(v  1 e 1 0 ]
 {
-"55
+"57
 } 0

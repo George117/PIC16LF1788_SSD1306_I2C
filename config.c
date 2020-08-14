@@ -25,6 +25,8 @@ void IO_First_Init(void)
     PORTA = 0x00;
     PORTB = 0x00;
     PORTC = 0x00;  
+    
+    INTCONbits.GIE=0;
 }
 
 void Configure_Clock(void)
