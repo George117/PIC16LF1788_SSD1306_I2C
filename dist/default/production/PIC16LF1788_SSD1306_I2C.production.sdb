@@ -33,20 +33,20 @@
 [v _OLED_Init OLED_Init `(v  1 e 1 0 ]
 "64
 [v _OLED_command OLED_command `(v  1 e 1 0 ]
-"80
+"115
 [v _OLED_write OLED_write `(v  1 e 1 0 ]
-"98
+"133
 [v _OLED_clear OLED_clear `(v  1 e 1 0 ]
-"132
+"137
 [v _OLED_char OLED_char `(v  1 e 1 0 ]
-"140
+"145
 [v _OLED_string OLED_string `(v  1 e 1 0 ]
-"81 D:\Git\PIC16LF1788_SSD1306_I2C/oled.h
+"83 D:\Git\PIC16LF1788_SSD1306_I2C/oled.h
 [v oled@OLED_characters OLED_characters `DC[475]uc  1 s 475 OLED_characters ]
-"179
+"181
 [v _OLED_buffer OLED_buffer `[512]uc  1 s 512 OLED_buffer ]
 [v oled@OLED_buffer OLED_buffer `[512]uc  1 s 512 OLED_buffer ]
-"214
+"216
 [v __address _address `uc  1 e 1 0 ]
 [s S108 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -168,48 +168,48 @@
 {
 "34
 } 0
-"80 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
+"115 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
 [v _OLED_write OLED_write `(v  1 e 1 0 ]
 {
-"81
+"116
 [v OLED_write@x x `ui  1 a 2 4 ]
-"97
+"132
 } 0
-"140
+"145
 [v _OLED_string OLED_string `(v  1 e 1 0 ]
 {
-"142
+"147
 [v OLED_string@pos pos `s  1 a 2 29 ]
-"144
+"149
 [v OLED_string@startx startx `s  1 a 2 27 ]
-"145
+"150
 [v OLED_string@starty starty `s  1 a 2 25 ]
-"143
+"148
 [v OLED_string@character character `uc  1 a 1 31 ]
-"140
+"145
 [v OLED_string@str str `*.25uc  1 p 2 19 ]
 [v OLED_string@x x `s  1 p 2 21 ]
 [v OLED_string@y y `s  1 p 2 23 ]
-"152
+"157
 } 0
-"132
+"137
 [v _OLED_char OLED_char `(v  1 e 1 0 ]
 {
 [v OLED_char@character character `uc  1 a 1 wreg ]
-"135
+"140
 [v OLED_char@offset offset `s  1 a 2 15 ]
-"134
+"139
 [v OLED_char@table_offset table_offset `s  1 a 2 13 ]
-"133
+"138
 [v OLED_char@_y _y `ui  1 a 2 11 ]
-"136
+"141
 [v OLED_char@i i `uc  1 a 1 18 ]
-"132
+"137
 [v OLED_char@character character `uc  1 a 1 wreg ]
 [v OLED_char@x x `s  1 p 2 6 ]
 [v OLED_char@y y `s  1 p 2 8 ]
 [v OLED_char@character character `uc  1 a 1 17 ]
-"138
+"143
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
@@ -221,10 +221,10 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"98 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
+"133 D:\Git\PIC16LF1788_SSD1306_I2C\oled.c
 [v _OLED_clear OLED_clear `(v  1 e 1 0 ]
 {
-"100
+"135
 } 0
 "4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\memset.c
 [v _memset memset `(*.39v  1 e 1 0 ]

@@ -48,7 +48,9 @@ extern "C" {
 #endif
 
     ////////////////////////////////////////////////////////////////////////////
-
+// uncomment for full lib  
+//#define FULL_LIB 
+    
 #define OLED_SETCONTRAST 0x81
 #define OLED_DISPLAYALLON_RESUME 0xA4
 #define OLED_DISPLAYALLON 0xA5
@@ -215,16 +217,23 @@ char _address = 0x78;
     
 void OLED_Init(char address);
 void OLED_command(char command);
-void OLED_data(char data);
+
 void OLED_write(void);
 void OLED_clear(void);
+
+
+
+void OLED_char(char character, short x, short y);
+void OLED_string(char* str, short x, short y);
+
+#ifdef FULL_LIB
+void OLED_data(char data);
 void OLED_invert(void);
 void OLED_rscroll(char start, char stop);
 void OLED_lscroll(char start, char stop);
 void OLED_stopscroll(void);
 void OLED_pixel(short x, short y, char color);
-void OLED_char(char character, short x, short y);
-void OLED_string(char* str, short x, short y);
+#endif
 
 #ifdef	__cplusplus
 }

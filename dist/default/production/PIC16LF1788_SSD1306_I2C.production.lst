@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Fri Aug 14 23:05:15 2020
+                                                                                               Fri Aug 14 23:14:46 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9 
      1                           	processor	16LF1788
@@ -3750,7 +3750,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3731                           
   3732                           ;main.c: 23:     OLED_write();
   3733  01C4  3181  21D4  3181   	fcall	_OLED_write
-  3734  01C7                     l1232:	
+  3734  01C7                     l1214:	
   3735                           
   3736                           ;main.c: 26:         LATCbits.LATC7 = 0;
   3737  01C7  0022               	movlb	2	; select bank2
@@ -3771,14 +3771,14 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3752  01D0  3200               	nop2	;2 cycle nop
   3753  01D1  3200               	nop2	;2 cycle nop
   3754  01D2  3200               	nop2	;2 cycle nop
-  3755  01D3  29C7               	goto	l1232
+  3755  01D3  29C7               	goto	l1214
   3756  01D4                     __end_of_main:	
   3757                           
   3758                           	psect	text1
   3759  01D4                     __ptext1:	
   3760 ;; *************** function _OLED_write *****************
   3761 ;; Defined at:
-  3762 ;;		line 80 in file "oled.c"
+  3762 ;;		line 115 in file "oled.c"
   3763 ;; Parameters:    Size  Location     Type
   3764 ;;		None
   3765 ;; Auto vars:     Size  Location     Type
@@ -3818,51 +3818,51 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3794                           ;psect for function _OLED_write
   3795  01D4                     _OLED_write:	
   3796                           
-  3797                           ;oled.c: 81:    unsigned x;;oled.c: 82:    OLED_command(0x21) ;
+  3797                           ;oled.c: 116:    unsigned x;;oled.c: 117:    OLED_command(0x21) ;
   3798                           
   3799                           ;incstack = 0
   3800                           ; Regs used in _OLED_write: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
   3801  01D4  3021               	movlw	33
   3802  01D5  3181  217A  3181   	fcall	_OLED_command
   3803                           
-  3804                           ;oled.c: 83:    OLED_command(0x00);
+  3804                           ;oled.c: 118:    OLED_command(0x00);
   3805  01D8  3000               	movlw	0
   3806  01D9  3181  217A  3181   	fcall	_OLED_command
   3807                           
-  3808                           ;oled.c: 84:    OLED_command(127);
+  3808                           ;oled.c: 119:    OLED_command(127);
   3809  01DC  307F               	movlw	127
   3810  01DD  3181  217A  3181   	fcall	_OLED_command
   3811                           
-  3812                           ;oled.c: 85:    OLED_command(0x22);
+  3812                           ;oled.c: 120:    OLED_command(0x22);
   3813  01E0  3022               	movlw	34
   3814  01E1  3181  217A  3181   	fcall	_OLED_command
   3815                           
-  3816                           ;oled.c: 86:    OLED_command(0x00);
+  3816                           ;oled.c: 121:    OLED_command(0x00);
   3817  01E4  3000               	movlw	0
   3818  01E5  3181  217A  3181   	fcall	_OLED_command
   3819                           
-  3820                           ;oled.c: 87:    OLED_command(3);
+  3820                           ;oled.c: 122:    OLED_command(3);
   3821  01E8  3003               	movlw	3
   3822  01E9  3181  217A  3181   	fcall	_OLED_command
   3823                           
-  3824                           ;oled.c: 89:    I2CStart();
+  3824                           ;oled.c: 124:    I2CStart();
   3825  01EC  3181  212A  3181   	fcall	_I2CStart
   3826                           
-  3827                           ;oled.c: 90:    I2CSend(_address) ;
+  3827                           ;oled.c: 125:    I2CSend(_address) ;
   3828  01EF  0020               	movlb	0	; select bank0
   3829  01F0  0840               	movf	__address,w
   3830  01F1  3181  2151  3181   	fcall	_I2CSend
   3831                           
-  3832                           ;oled.c: 91:    I2CSend(0x40) ;
+  3832                           ;oled.c: 126:    I2CSend(0x40) ;
   3833  01F4  3040               	movlw	64
   3834  01F5  3181  2151  3181   	fcall	_I2CSend
   3835                           
-  3836                           ;oled.c: 92:    for(x = 0; x < (128 * 32 / 8); x++)
+  3836                           ;oled.c: 127:    for(x = 0; x < (128 * 32 / 8); x++)
   3837  01F8  01F4               	clrf	OLED_write@x
   3838  01F9  01F5               	clrf	OLED_write@x+1
-  3839  01FA                     l1212:	
+  3839  01FA                     l1194:	
   3840                           
-  3841                           ;oled.c: 93:    {;oled.c: 94:       I2CSend(OLED_buffer[x]);
+  3841                           ;oled.c: 128:    {;oled.c: 129:       I2CSend(OLED_buffer[x]);
   3842  01FA  30F0               	movlw	240
   3843  01FB  00F2               	movwf	??_OLED_write
   3844  01FC  3023               	movlw	35
@@ -3876,7 +3876,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3852  0204  0801               	movf	1,w
   3853  0205  3181  2151  3181   	fcall	_I2CSend
   3854                           
-  3855                           ;oled.c: 95:    }
+  3855                           ;oled.c: 130:    }
   3856  0208  3001               	movlw	1
   3857  0209  07F4               	addwf	OLED_write@x,f
   3858  020A  3000               	movlw	0
@@ -3887,9 +3887,9 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3863  020F  1903               	skipnz
   3864  0210  0274               	subwf	OLED_write@x,w
   3865  0211  1C03               	skipc
-  3866  0212  29FA               	goto	l1212
+  3866  0212  29FA               	goto	l1194
   3867                           
-  3868                           ;oled.c: 96:    I2CStop();
+  3868                           ;oled.c: 131:    I2CStop();
   3869  0213  3181  2126         	fcall	_I2CStop
   3870  0215  0008               	return
   3871  0216                     __end_of_OLED_write:	
@@ -3898,7 +3898,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3874  0216                     __ptext2:	
   3875 ;; *************** function _OLED_string *****************
   3876 ;; Defined at:
-  3877 ;;		line 140 in file "oled.c"
+  3877 ;;		line 145 in file "oled.c"
   3878 ;; Parameters:    Size  Location     Type
   3879 ;;  str             2   19[BANK0 ] PTR unsigned char 
   3880 ;;		 -> STR_1(15), 
@@ -3941,14 +3941,14 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3912                           ;psect for function _OLED_string
   3913  0216                     _OLED_string:	
   3914                           
-  3915                           ;oled.c: 142:     short pos = 0;
+  3915                           ;oled.c: 147:     short pos = 0;
   3916                           
   3917                           ;incstack = 0
   3918                           ; Regs used in _OLED_string: [wreg-fsr1h+status,2+status,0+pclath+cstack]
   3919  0216  01BD               	clrf	OLED_string@pos
   3920  0217  01BE               	clrf	OLED_string@pos+1
   3921                           
-  3922                           ;oled.c: 143:     char character = str[pos++];
+  3922                           ;oled.c: 148:     char character = str[pos++];
   3923  0218  0833               	movf	OLED_string@str,w
   3924  0219  0084               	movwf	4
   3925  021A  0834               	movf	OLED_string@str+1,w
@@ -3962,27 +3962,27 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3933  0222  3000               	movlw	0
   3934  0223  3DBE               	addwfc	OLED_string@pos+1,f
   3935                           
-  3936                           ;oled.c: 144:     short startx = x;
+  3936                           ;oled.c: 149:     short startx = x;
   3937  0224  0836               	movf	OLED_string@x+1,w
   3938  0225  00BC               	movwf	OLED_string@startx+1
   3939  0226  0835               	movf	OLED_string@x,w
   3940  0227  00BB               	movwf	OLED_string@startx
   3941                           
-  3942                           ;oled.c: 145:     short starty = y;
+  3942                           ;oled.c: 150:     short starty = y;
   3943  0228  0838               	movf	OLED_string@y+1,w
   3944  0229  00BA               	movwf	OLED_string@starty+1
   3945  022A  0837               	movf	OLED_string@y,w
   3946  022B  00B9               	movwf	OLED_string@starty
-  3947  022C                     l1196:	
-  3948                           ;oled.c: 146:     while(character != '\0') {
+  3947  022C                     l1178:	
+  3948                           ;oled.c: 151:     while(character != '\0') {
   3949                           
   3950                           
-  3951                           ;oled.c: 146:     while(character != '\0') {
+  3951                           ;oled.c: 151:     while(character != '\0') {
   3952  022C  083F               	movf	OLED_string@character,w
   3953  022D  1903               	btfsc	3,2
   3954  022E  0008               	return
   3955                           
-  3956                           ;oled.c: 147:         OLED_char(character, startx, starty);
+  3956                           ;oled.c: 152:         OLED_char(character, startx, starty);
   3957  022F  083C               	movf	OLED_string@startx+1,w
   3958  0230  00F7               	movwf	OLED_char@x+1
   3959  0231  083B               	movf	OLED_string@startx,w
@@ -3994,7 +3994,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3965  0237  083F               	movf	OLED_string@character,w
   3966  0238  3182  225F  3182   	fcall	_OLED_char
   3967                           
-  3968                           ;oled.c: 148:         if(startx >= 123) starty++;
+  3968                           ;oled.c: 153:         if(startx >= 123) starty++;
   3969  023B  083C               	movf	OLED_string@startx+1,w
   3970  023C  3A80               	xorlw	128
   3971  023D  00FA               	movwf	??_OLED_string
@@ -4006,22 +4006,22 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3977  0243  023B               	subwf	OLED_string@startx,w
   3978  0244                     u345:	
   3979  0244  1C03               	skipc
-  3980  0245  2A4B               	goto	l154
+  3980  0245  2A4B               	goto	l136
   3981  0246  3001               	movlw	1
   3982  0247  0020               	movlb	0	; select bank0
   3983  0248  07B9               	addwf	OLED_string@starty,f
   3984  0249  3000               	movlw	0
   3985  024A  3DBA               	addwfc	OLED_string@starty+1,f
-  3986  024B                     l154:	
+  3986  024B                     l136:	
   3987                           
-  3988                           ;oled.c: 149:         startx += 5;
+  3988                           ;oled.c: 154:         startx += 5;
   3989  024B  3005               	movlw	5
   3990  024C  0020               	movlb	0	; select bank0
   3991  024D  07BB               	addwf	OLED_string@startx,f
   3992  024E  3000               	movlw	0
   3993  024F  3DBC               	addwfc	OLED_string@startx+1,f
   3994                           
-  3995                           ;oled.c: 150:         character = str[pos++];
+  3995                           ;oled.c: 155:         character = str[pos++];
   3996  0250  0833               	movf	OLED_string@str,w
   3997  0251  073D               	addwf	OLED_string@pos,w
   3998  0252  0084               	movwf	4
@@ -4036,14 +4036,14 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4007  025B  07BD               	addwf	OLED_string@pos,f
   4008  025C  3000               	movlw	0
   4009  025D  3DBE               	addwfc	OLED_string@pos+1,f
-  4010  025E  2A2C               	goto	l1196
+  4010  025E  2A2C               	goto	l1178
   4011  025F                     __end_of_OLED_string:	
   4012                           
   4013                           	psect	text3
   4014  025F                     __ptext3:	
   4015 ;; *************** function _OLED_char *****************
   4016 ;; Defined at:
-  4017 ;;		line 132 in file "oled.c"
+  4017 ;;		line 137 in file "oled.c"
   4018 ;; Parameters:    Size  Location     Type
   4019 ;;  character       1    wreg     unsigned char 
   4020 ;;  x               2    6[COMMON] short 
@@ -4091,7 +4091,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4057                           ;OLED_char@character stored from wreg
   4058  025F  00B1               	movwf	OLED_char@character
   4059                           
-  4060                           ;oled.c: 133:     unsigned _y = y % 8;
+  4060                           ;oled.c: 138:     unsigned _y = y % 8;
   4061  0260  3007               	movlw	7
   4062  0261  0578               	andwf	OLED_char@y,w
   4063  0262  00AB               	movwf	OLED_char@_y
@@ -4099,7 +4099,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4065  0264  0579               	andwf	OLED_char@y+1,w
   4066  0265  00AC               	movwf	OLED_char@_y+1
   4067                           
-  4068                           ;oled.c: 134:     short table_offset = (character-0x20)*5;
+  4068                           ;oled.c: 139:     short table_offset = (character-0x20)*5;
   4069  0266  0831               	movf	OLED_char@character,w
   4070  0267  3EE0               	addlw	224
   4071  0268  00F0               	movwf	___wmul@multiplier
@@ -4117,7 +4117,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4083  0276  0870               	movf	?___wmul,w
   4084  0277  00AD               	movwf	OLED_char@table_offset
   4085                           
-  4086                           ;oled.c: 135:     short offset = (y-_y)*16 + x;
+  4086                           ;oled.c: 140:     short offset = (y-_y)*16 + x;
   4087  0278  082B               	movf	OLED_char@_y,w
   4088  0279  0278               	subwf	OLED_char@y,w
   4089  027A  00A0               	movwf	??_OLED_char
@@ -4140,9 +4140,9 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4106  028B  3D21               	addwfc	??_OLED_char+1,w
   4107  028C  00B0               	movwf	OLED_char@offset+1
   4108                           
-  4109                           ;oled.c: 136:     char i = 0;
+  4109                           ;oled.c: 141:     char i = 0;
   4110  028D  01B2               	clrf	OLED_char@i
-  4111  028E                     l1110:	
+  4111  028E                     l1092:	
   4112  028E  0832               	movf	OLED_char@i,w
   4113  028F  00A0               	movwf	??_OLED_char
   4114  0290  01A1               	clrf	??_OLED_char+1
@@ -4190,7 +4190,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4156  02BA  0232               	subwf	OLED_char@i,w
   4157  02BB  1803               	btfsc	3,0
   4158  02BC  0008               	return
-  4159  02BD  2A8E               	goto	l1110
+  4159  02BD  2A8E               	goto	l1092
   4160  02BE                     __end_of_OLED_char:	
   4161                           
   4162                           	psect	text4
@@ -4238,14 +4238,14 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4199                           ; Regs used in ___wmul: [wreg+status,2+status,0]
   4200  018E  01F4               	clrf	___wmul@product
   4201  018F  01F5               	clrf	___wmul@product+1
-  4202  0190                     l1024:	
+  4202  0190                     l1006:	
   4203  0190  1C70               	btfss	___wmul@multiplier,0
-  4204  0191  2996               	goto	l306
+  4204  0191  2996               	goto	l288
   4205  0192  0872               	movf	___wmul@multiplicand,w
   4206  0193  07F4               	addwf	___wmul@product,f
   4207  0194  0873               	movf	___wmul@multiplicand+1,w
   4208  0195  3DF5               	addwfc	___wmul@product+1,f
-  4209  0196                     l306:	
+  4209  0196                     l288:	
   4210  0196  3001               	movlw	1
   4211  0197                     u255:	
   4212  0197  35F2               	lslf	___wmul@multiplicand,f
@@ -4261,7 +4261,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4222  01A0  0870               	movf	___wmul@multiplier,w
   4223  01A1  0471               	iorwf	___wmul@multiplier+1,w
   4224  01A2  1D03               	btfss	3,2
-  4225  01A3  2990               	goto	l1024
+  4225  01A3  2990               	goto	l1006
   4226  01A4  0875               	movf	___wmul@product+1,w
   4227  01A5  00F1               	movwf	?___wmul+1
   4228  01A6  0874               	movf	___wmul@product,w
@@ -4273,7 +4273,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4234  016C                     __ptext5:	
   4235 ;; *************** function _OLED_clear *****************
   4236 ;; Defined at:
-  4237 ;;		line 98 in file "oled.c"
+  4237 ;;		line 133 in file "oled.c"
   4238 ;; Parameters:    Size  Location     Type
   4239 ;;		None
   4240 ;; Auto vars:     Size  Location     Type
@@ -4310,7 +4310,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4266                           ;psect for function _OLED_clear
   4267  016C                     _OLED_clear:	
   4268                           
-  4269                           ;oled.c: 99:     memset(OLED_buffer, 0, 128 * 32 / 8);
+  4269                           ;oled.c: 134:     memset(OLED_buffer, 0, 128 * 32 / 8);
   4270                           
   4271                           ;incstack = 0
   4272                           ; Regs used in _OLED_clear: [wreg+fsr1l+fsr1h+status,2+status,0+pclath+cstack]
@@ -4544,7 +4544,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4495  03D6  05F4               	andwf	memset@n,f
   4496  03D7  30FF               	movlw	255
   4497  03D8  05F5               	andwf	memset@n+1,f
-  4498  03D9                     l1096:	
+  4498  03D9                     l1078:	
   4499  03D9  0874               	movf	memset@n,w
   4500  03DA  0475               	iorwf	memset@n+1,w
   4501  03DB  1903               	btfsc	3,2
@@ -4563,7 +4563,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4514  03E8  07FC               	addwf	memset@s,f
   4515  03E9  3000               	movlw	0
   4516  03EA  3DFD               	addwfc	memset@s+1,f
-  4517  03EB  2BD9               	goto	l1096
+  4517  03EB  2BD9               	goto	l1078
   4518  03EC                     __end_of_memset:	
   4519                           
   4520                           	psect	text7
@@ -4965,14 +4965,14 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   4891  0155                     l106:	
   4892  0155  1814               	btfsc	20,0	;volatile
   4893  0156  2955               	goto	l106
-  4894  0157                     l1018:	
+  4894  0157                     l1000:	
   4895  0157  0816               	movf	22,w	;volatile
   4896  0158  391F               	andlw	31
   4897  0159  1D03               	btfss	3,2
-  4898  015A  2957               	goto	l1018
+  4898  015A  2957               	goto	l1000
   4899  015B  1D14               	btfss	20,2	;volatile
   4900  015C  0008               	return
-  4901  015D  2957               	goto	l1018
+  4901  015D  2957               	goto	l1000
   4902  015E                     __end_of_I2CSend:	
   4903                           
   4904                           	psect	text12
@@ -5582,16 +5582,16 @@ BANK25               0      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Fri Aug 14 23:05:15 2020
+Symbol Table                                                                                   Fri Aug 14 23:14:46 2020
 
                 __CFG_CP$OFF 0000                           l94 012C          ___wmul@multiplicand 0072  
                 __CFG_LVP$ON 0000                          l100 0127                          l106 0155  
-                        l306 0196                          l154 024B                          u255 0197  
+                        l136 024B                          l288 0196                          u255 0197  
                         u265 019C                          u345 0244                 __CFG_CPD$OFF 0000  
             __end_of_I2CInit 0145              __end_of_I2CSend 015E              __end_of_I2CStop 012A  
-               __CFG_BORV$LO 0000                          wreg 0009                         l1110 028E  
-                       l1024 0190                         l1018 0157                         l1212 01FA  
-                       l1232 01C7                         l1096 03D9                         l1196 022C  
+               __CFG_BORV$LO 0000                          wreg 0009                         l1000 0157  
+                       l1006 0190                         l1214 01C7                         l1092 028E  
+                       l1078 03D9                         l1178 022C                         l1194 01FA  
                        STR_1 09DB                 __CFG_WRT$OFF 0000                __CFG_FCMEN$ON 0000  
                        _main 01A9                  ?_OLED_clear 0070                         fsr0h 0005  
                        fsr1h 0007                         indf0 0000                         fsr0l 0004  

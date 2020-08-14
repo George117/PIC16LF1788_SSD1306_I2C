@@ -10314,7 +10314,7 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 # 3 "oled.c" 2
 
 # 1 "./oled.h" 1
-# 81 "./oled.h"
+# 83 "./oled.h"
 static const unsigned char OLED_characters[] = {
         0x00, 0x00, 0x00, 0x00, 0x00,
    0x00, 0x00, 0x5F, 0x00, 0x00,
@@ -10452,14 +10452,12 @@ char _address = 0x78;
 
 void OLED_Init(char address);
 void OLED_command(char command);
-void OLED_data(char data);
+
 void OLED_write(void);
 void OLED_clear(void);
-void OLED_invert(void);
-void OLED_rscroll(char start, char stop);
-void OLED_lscroll(char start, char stop);
-void OLED_stopscroll(void);
-void OLED_pixel(short x, short y, char color);
+
+
+
 void OLED_char(char character, short x, short y);
 void OLED_string(char* str, short x, short y);
 # 4 "oled.c" 2
@@ -10552,14 +10550,7 @@ void OLED_command(char command) {
     I2CSend(command);
     I2CStop();
 }
-void OLED_data( char data) {
-
-    I2CStart();
-    I2CSend(_address);
-    I2CSend(0x40);
-    I2CSend(data);
-    I2CStop();
-}
+# 115 "oled.c"
 void OLED_write(){
    unsigned x;
    OLED_command(0x21) ;
@@ -10581,37 +10572,7 @@ void OLED_write(){
 void OLED_clear(){
     memset(OLED_buffer, 0, 128 * 32 / 8);
 }
-void OLED_invert(){
-    OLED_command(0xA7);
-}
-void OLED_rscroll(char start, char stop) {
-    OLED_command(0x26);
-    OLED_command(0X00);
-    OLED_command(start);
-    OLED_command(0X00);
-    OLED_command(stop);
-    OLED_command(0X00);
-    OLED_command(0XFF);
-    OLED_command(0x2F);
-}
-void OLED_lscroll(char start, char stop) {
-    OLED_command(0x27);
-    OLED_command(0X00);
-    OLED_command(start);
-    OLED_command(0X00);
-    OLED_command(stop);
-    OLED_command(0X00);
-    OLED_command(0XFF);
-    OLED_command(0x2F);
-}
-void OLED_stopscroll() {
-    OLED_command(0x2E);
-}
-void OLED_pixel(short x, short y, char color){
-    char y_bit = y%8;
-    short y_row = (y - y_bit)*16 + x;
-    OLED_buffer[y_row] |= (color?1:0) << y_bit;
-}
+
 void OLED_char(char character, short x, short y) {
     unsigned _y = y % 8;
     short table_offset = (character-0x20)*5;

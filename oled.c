@@ -69,6 +69,7 @@ void OLED_command(char command) {
     I2CSend(command);       //send command
     I2CStop();              //StopI2C();
 }
+#ifdef FULL_LIB
 void OLED_data( char data) {
 
     I2CStart();             //StartI2C();
@@ -77,27 +78,7 @@ void OLED_data( char data) {
     I2CSend(data);          //send data
     I2CStop();              //StopI2C();
 }
-void OLED_write(){
-   unsigned x;
-   OLED_command(OLED_COLUMNADDR) ;
-   OLED_command(0x00);
-   OLED_command(127);
-   OLED_command(OLED_PAGEADDR);
-   OLED_command(0x00);
-   OLED_command(3);
 
-   I2CStart();
-   I2CSend(_address) ;
-   I2CSend(0x40) ;
-   for(x = 0; x < (128 * 32 / 8); x++)
-   {
-      I2CSend(OLED_buffer[x]);
-   }
-   I2CStop();
-}
-void OLED_clear(){
-    memset(OLED_buffer, 0, 128 * 32 / 8);
-}
 void OLED_invert(){
     OLED_command(OLED_INVERTDISPLAY);
 }
@@ -129,6 +110,30 @@ void OLED_pixel(short x, short y, char color){ //hmm, dosent include error check
     short y_row = (y - y_bit)*16 + x;
     OLED_buffer[y_row] |= (color?1:0) << y_bit;
 }
+#endif
+
+void OLED_write(){
+   unsigned x;
+   OLED_command(OLED_COLUMNADDR) ;
+   OLED_command(0x00);
+   OLED_command(127);
+   OLED_command(OLED_PAGEADDR);
+   OLED_command(0x00);
+   OLED_command(3);
+
+   I2CStart();
+   I2CSend(_address) ;
+   I2CSend(0x40) ;
+   for(x = 0; x < (128 * 32 / 8); x++)
+   {
+      I2CSend(OLED_buffer[x]);
+   }
+   I2CStop();
+}
+void OLED_clear(){
+    memset(OLED_buffer, 0, 128 * 32 / 8);
+}
+
 void OLED_char(char character, short x, short y) {
     unsigned _y = y % 8;
     short table_offset = (character-0x20)*5;

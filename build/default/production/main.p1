@@ -6,17 +6,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "38
 [; ;./config.h: 38: void Configure_Clock(void);
 [v _Configure_Clock `(v ~T0 @X0 0 ef ]
-"216 ./oled.h
-[; ;./oled.h: 216: void OLED_Init(char address);
+"218 ./oled.h
+[; ;./oled.h: 218: void OLED_Init(char address);
 [v _OLED_Init `(v ~T0 @X0 0 ef1`uc ]
-"220
-[; ;./oled.h: 220: void OLED_clear(void);
+"222
+[; ;./oled.h: 222: void OLED_clear(void);
 [v _OLED_clear `(v ~T0 @X0 0 ef ]
 "227
 [; ;./oled.h: 227: void OLED_string(char* str, short x, short y);
 [v _OLED_string `(v ~T0 @X0 0 ef3`*uc`s`s ]
-"219
-[; ;./oled.h: 219: void OLED_write(void);
+"221
+[; ;./oled.h: 221: void OLED_write(void);
 [v _OLED_write `(v ~T0 @X0 0 ef ]
 "2477 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h: 2477:     struct {
@@ -1038,8 +1038,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x LPBOR = OFF ]
 "35
 [p x LVP = ON ]
-"81 ./oled.h
-[; ;./oled.h: 81: static const unsigned char OLED_characters[] = {
+"83 ./oled.h
+[; ;./oled.h: 83: static const unsigned char OLED_characters[] = {
 [v _OLED_characters `Cuc ~T0 @X0 -> 475 `i s ]
 [i _OLED_characters
 :U ..
@@ -1520,8 +1520,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 2 `i `uc
 ..
 ]
-"179
-[; ;./oled.h: 179: static char OLED_buffer[128 * 32 / 8] = {
+"181
+[; ;./oled.h: 181: static char OLED_buffer[128 * 32 / 8] = {
 [v _OLED_buffer `uc ~T0 @X0 -> 512 `i s ]
 [i _OLED_buffer
 :U ..
@@ -2039,8 +2039,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `uc
 ..
 ]
-"214
-[; ;./oled.h: 214: char _address = 0x78;
+"216
+[; ;./oled.h: 216: char _address = 0x78;
 [v __address `uc ~T0 @X0 1 e ]
 [i __address
 -> -> 120 `i `uc
