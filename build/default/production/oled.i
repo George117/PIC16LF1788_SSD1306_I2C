@@ -10452,12 +10452,8 @@ char _address = 0x78;
 
 void OLED_Init(char address);
 void OLED_command(char command);
-
 void OLED_write(void);
 void OLED_clear(void);
-
-
-
 void OLED_char(char character, short x, short y);
 void OLED_string(char* str, short x, short y);
 # 4 "oled.c" 2

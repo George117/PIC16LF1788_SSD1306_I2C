@@ -36,7 +36,7 @@ stringtext1 STRCODE 0 9EA 9EA 1DB 2
 stringtext2 STRCODE 0 800 800 1EA 2
 idataBANK0 CODE 0 125 125 1 2
 dataBANK0 BANK0 1 40 40 1 1
-$C:\Users\georg\AppData\Local\Temp\s3uo.o
+$C:\Users\georg\AppData\Local\Temp\sbho.o
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
@@ -132,25 +132,25 @@ STRING BC5-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
-7EC cinit CODE >4821:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7EC cinit CODE >4824:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7EC cinit CODE >4861:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7ED cinit CODE >4862:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7EE cinit CODE >4863:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7EF cinit CODE >4864:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F0 cinit CODE >4865:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F1 cinit CODE >4866:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F2 cinit CODE >4867:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F3 cinit CODE >4868:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F4 cinit CODE >4869:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F5 cinit CODE >4870:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F6 cinit CODE >4871:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7F7 cinit CODE >4872:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7FA cinit CODE >4876:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7FC cinit CODE >4877:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7FD cinit CODE >4883:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7FD cinit CODE >4885:C:\Users\georg\AppData\Local\Temp\s3uo.s
-7FE cinit CODE >4886:C:\Users\georg\AppData\Local\Temp\s3uo.s
+7EC cinit CODE >4821:C:\Users\georg\AppData\Local\Temp\sbho.s
+7EC cinit CODE >4824:C:\Users\georg\AppData\Local\Temp\sbho.s
+7EC cinit CODE >4861:C:\Users\georg\AppData\Local\Temp\sbho.s
+7ED cinit CODE >4862:C:\Users\georg\AppData\Local\Temp\sbho.s
+7EE cinit CODE >4863:C:\Users\georg\AppData\Local\Temp\sbho.s
+7EF cinit CODE >4864:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F0 cinit CODE >4865:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F1 cinit CODE >4866:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F2 cinit CODE >4867:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F3 cinit CODE >4868:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F4 cinit CODE >4869:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F5 cinit CODE >4870:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F6 cinit CODE >4871:C:\Users\georg\AppData\Local\Temp\sbho.s
+7F7 cinit CODE >4872:C:\Users\georg\AppData\Local\Temp\sbho.s
+7FA cinit CODE >4876:C:\Users\georg\AppData\Local\Temp\sbho.s
+7FC cinit CODE >4877:C:\Users\georg\AppData\Local\Temp\sbho.s
+7FD cinit CODE >4883:C:\Users\georg\AppData\Local\Temp\sbho.s
+7FD cinit CODE >4885:C:\Users\georg\AppData\Local\Temp\sbho.s
+7FE cinit CODE >4886:C:\Users\georg\AppData\Local\Temp\sbho.s
 12F text14 CODE >32:D:\Git\PIC16LF1788_SSD1306_I2C\config.c
 12F text14 CODE >34:D:\Git\PIC16LF1788_SSD1306_I2C\config.c
 131 text14 CODE >35:D:\Git\PIC16LF1788_SSD1306_I2C\config.c
@@ -293,28 +293,28 @@ $dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 1A9 maintext CODE >13:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
 1A9 maintext CODE >15:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
 1AC maintext CODE >16:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1AF maintext CODE >20:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1B3 maintext CODE >21:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1B6 maintext CODE >22:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1C4 maintext CODE >23:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1C7 maintext CODE >26:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1C9 maintext CODE >27:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1CD maintext CODE >28:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-1CF maintext CODE >29:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
-145 inittext CODE >4844:C:\Users\georg\AppData\Local\Temp\s3uo.s
-145 inittext CODE >4845:C:\Users\georg\AppData\Local\Temp\s3uo.s
-146 inittext CODE >4846:C:\Users\georg\AppData\Local\Temp\s3uo.s
-146 inittext CODE >4847:C:\Users\georg\AppData\Local\Temp\s3uo.s
-147 inittext CODE >4848:C:\Users\georg\AppData\Local\Temp\s3uo.s
-148 inittext CODE >4849:C:\Users\georg\AppData\Local\Temp\s3uo.s
-149 inittext CODE >4850:C:\Users\georg\AppData\Local\Temp\s3uo.s
-14A inittext CODE >4851:C:\Users\georg\AppData\Local\Temp\s3uo.s
-14B inittext CODE >4852:C:\Users\georg\AppData\Local\Temp\s3uo.s
-14C inittext CODE >4853:C:\Users\georg\AppData\Local\Temp\s3uo.s
-14D inittext CODE >4854:C:\Users\georg\AppData\Local\Temp\s3uo.s
-14E inittext CODE >4855:C:\Users\georg\AppData\Local\Temp\s3uo.s
-14F inittext CODE >4857:C:\Users\georg\AppData\Local\Temp\s3uo.s
-150 inittext CODE >4856:C:\Users\georg\AppData\Local\Temp\s3uo.s
+1AF maintext CODE >17:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1B3 maintext CODE >19:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1B6 maintext CODE >20:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1C4 maintext CODE >21:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1C7 maintext CODE >24:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1C9 maintext CODE >25:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1CD maintext CODE >26:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+1CF maintext CODE >27:D:\Git\PIC16LF1788_SSD1306_I2C\main.c
+145 inittext CODE >4844:C:\Users\georg\AppData\Local\Temp\sbho.s
+145 inittext CODE >4845:C:\Users\georg\AppData\Local\Temp\sbho.s
+146 inittext CODE >4846:C:\Users\georg\AppData\Local\Temp\sbho.s
+146 inittext CODE >4847:C:\Users\georg\AppData\Local\Temp\sbho.s
+147 inittext CODE >4848:C:\Users\georg\AppData\Local\Temp\sbho.s
+148 inittext CODE >4849:C:\Users\georg\AppData\Local\Temp\sbho.s
+149 inittext CODE >4850:C:\Users\georg\AppData\Local\Temp\sbho.s
+14A inittext CODE >4851:C:\Users\georg\AppData\Local\Temp\sbho.s
+14B inittext CODE >4852:C:\Users\georg\AppData\Local\Temp\sbho.s
+14C inittext CODE >4853:C:\Users\georg\AppData\Local\Temp\sbho.s
+14D inittext CODE >4854:C:\Users\georg\AppData\Local\Temp\sbho.s
+14E inittext CODE >4855:C:\Users\georg\AppData\Local\Temp\sbho.s
+14F inittext CODE >4857:C:\Users\georg\AppData\Local\Temp\sbho.s
+150 inittext CODE >4856:C:\Users\georg\AppData\Local\Temp\sbho.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -344,11 +344,11 @@ __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 OLED_char@offset 2F 0 BANK0 1 cstackBANK0 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\georg\AppData\Local\Temp\s3uo.o
+___sp 0 0 STACK 2 stack C:\Users\georg\AppData\Local\Temp\sbho.o
 _main 352 0 CODE 0 maintext dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 btemp 7E 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __end_of_OLED_string 4BE 0 CODE 0 text2 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
-start 4 0 CODE 0 init C:\Users\georg\AppData\Local\Temp\s3uo.o
+start 4 0 CODE 0 init C:\Users\georg\AppData\Local\Temp\sbho.o
 __CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 ?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
@@ -359,12 +359,12 @@ __Hpowerup 0 0 CODE 0 powerup -
 __HdataBIGRAM 0 0 ABS 0 dataBIGRAM -
 __end_of_OLED_Init 662 0 CODE 0 text7 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __end_of_OLED_char 57C 0 CODE 0 text3 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\s3uo.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\s3uo.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\s3uo.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\s3uo.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\s3uo.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\s3uo.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\sbho.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\sbho.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\sbho.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\sbho.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\sbho.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\georg\AppData\Local\Temp\sbho.o
 __size_of_OLED_Init 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __size_of_OLED_char 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 _OSCCONbits 99 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
@@ -395,8 +395,8 @@ __end_of_I2CStart 25E 0 CODE 0 text10 dist/default/production\PIC16LF1788_SSD130
 __end_of_OLED_command 31C 0 CODE 0 text8 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 _OLED_clear 2D8 0 CODE 0 text5 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 _OLED_write 3A8 0 CODE 0 text1 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
-___stackhi 23EF 0 ABS 0 - C:\Users\georg\AppData\Local\Temp\s3uo.o
-___stacklo 2021 0 ABS 0 - C:\Users\georg\AppData\Local\Temp\s3uo.o
+___stackhi 23EF 0 ABS 0 - C:\Users\georg\AppData\Local\Temp\sbho.o
+___stacklo 2021 0 ABS 0 - C:\Users\georg\AppData\Local\Temp\sbho.o
 __LidataBIGRAM 0 0 ABS 0 idataBIGRAM -
 __end_of_IO_First_Init 2D8 0 CODE 0 text13 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 start_initialization FD8 0 CODE 0 cinit dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
@@ -409,7 +409,7 @@ _SSPADD 212 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production
 _SSPBUF 211 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __end_of_OLED_clear 2F4 0 CODE 0 text5 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __end_of_OLED_write 42C 0 CODE 0 text1 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\georg\AppData\Local\Temp\s3uo.o
+___int_sp 0 0 STACK 2 stack C:\Users\georg\AppData\Local\Temp\sbho.o
 OLED_string@startx 3B 0 BANK0 1 cstackBANK0 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 OLED_string@starty 39 0 BANK0 1 cstackBANK0 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __Hbank0 0 0 ABS 0 bank0 -
@@ -563,7 +563,7 @@ __HidataBIGRAM 0 0 ABS 0 idataBIGRAM -
 __size_of_Configure_Clock 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 oled@OLED_buffer 23F0 0 ABS 1 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\georg\AppData\Local\Temp\s3uo.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\georg\AppData\Local\Temp\sbho.o
 __pdataBANK0 40 0 BANK0 1 dataBANK0 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 __size_of___wmul 0 0 ABS 0 - dist/default/production\PIC16LF1788_SSD1306_I2C.production.o
 _I2CInit 274 0 CODE 0 text12 dist/default/production\PIC16LF1788_SSD1306_I2C.production.o

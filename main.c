@@ -13,11 +13,9 @@
 void main(void) 
 {
     IO_First_Init();
-    Configure_Clock();
-    
-  
-    
+    Configure_Clock();    
     OLED_Init(0x3C);
+
     OLED_clear();
     OLED_string("Hello World69!", 0, 0);
     OLED_write();

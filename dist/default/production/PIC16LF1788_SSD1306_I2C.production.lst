@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Fri Aug 14 23:14:46 2020
+                                                                                               Fri Aug 14 23:16:06 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9 
      1                           	processor	16LF1788
@@ -3727,14 +3727,14 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3708                           ;main.c: 16:     Configure_Clock();
   3709  01AC  3181  212F  3181   	fcall	_Configure_Clock
   3710                           
-  3711                           ;main.c: 20:     OLED_Init(0x3C);
+  3711                           ;main.c: 17:     OLED_Init(0x3C);
   3712  01AF  303C               	movlw	60
   3713  01B0  3182  22BE  3181   	fcall	_OLED_Init
   3714                           
-  3715                           ;main.c: 21:     OLED_clear();
+  3715                           ;main.c: 19:     OLED_clear();
   3716  01B3  3181  216C  3181   	fcall	_OLED_clear
   3717                           
-  3718                           ;main.c: 22:     OLED_string("Hello World69!", 0, 0);
+  3718                           ;main.c: 20:     OLED_string("Hello World69!", 0, 0);
   3719  01B6  30DB               	movlw	low (STR_1| (0+32768))
   3720  01B7  0020               	movlb	0	; select bank0
   3721  01B8  00B3               	movwf	OLED_string@str
@@ -3748,25 +3748,25 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og9
   3729  01C0  00B8               	movwf	OLED_string@y+1
   3730  01C1  3182  2216  3181   	fcall	_OLED_string
   3731                           
-  3732                           ;main.c: 23:     OLED_write();
+  3732                           ;main.c: 21:     OLED_write();
   3733  01C4  3181  21D4  3181   	fcall	_OLED_write
   3734  01C7                     l1214:	
   3735                           
-  3736                           ;main.c: 26:         LATCbits.LATC7 = 0;
+  3736                           ;main.c: 24:         LATCbits.LATC7 = 0;
   3737  01C7  0022               	movlb	2	; select bank2
   3738  01C8  138E               	bcf	14,7	;volatile
   3739                           
-  3740                           ;main.c: 27:         _delay((unsigned long)((1)*(32000000/4000000.0)));
+  3740                           ;main.c: 25:         _delay((unsigned long)((1)*(32000000/4000000.0)));
   3741  01C9  3200               	nop2	;2 cycle nop
   3742  01CA  3200               	nop2	;2 cycle nop
   3743  01CB  3200               	nop2	;2 cycle nop
   3744  01CC  3200               	nop2	;2 cycle nop
   3745                           
-  3746                           ;main.c: 28:         LATCbits.LATC7 = 1;
+  3746                           ;main.c: 26:         LATCbits.LATC7 = 1;
   3747  01CD  0022               	movlb	2	; select bank2
   3748  01CE  178E               	bsf	14,7	;volatile
   3749                           
-  3750                           ;main.c: 29:         _delay((unsigned long)((1)*(32000000/4000000.0)));
+  3750                           ;main.c: 27:         _delay((unsigned long)((1)*(32000000/4000000.0)));
   3751  01CF  3200               	nop2	;2 cycle nop
   3752  01D0  3200               	nop2	;2 cycle nop
   3753  01D1  3200               	nop2	;2 cycle nop
@@ -5582,7 +5582,7 @@ BANK25               0      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Fri Aug 14 23:14:46 2020
+Symbol Table                                                                                   Fri Aug 14 23:16:06 2020
 
                 __CFG_CP$OFF 0000                           l94 012C          ___wmul@multiplicand 0072  
                 __CFG_LVP$ON 0000                          l100 0127                          l106 0155  

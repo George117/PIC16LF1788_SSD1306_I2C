@@ -9,14 +9,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "218 ./oled.h
 [; ;./oled.h: 218: void OLED_Init(char address);
 [v _OLED_Init `(v ~T0 @X0 0 ef1`uc ]
-"222
-[; ;./oled.h: 222: void OLED_clear(void);
-[v _OLED_clear `(v ~T0 @X0 0 ef ]
-"227
-[; ;./oled.h: 227: void OLED_string(char* str, short x, short y);
-[v _OLED_string `(v ~T0 @X0 0 ef3`*uc`s`s ]
 "221
-[; ;./oled.h: 221: void OLED_write(void);
+[; ;./oled.h: 221: void OLED_clear(void);
+[v _OLED_clear `(v ~T0 @X0 0 ef ]
+"223
+[; ;./oled.h: 223: void OLED_string(char* str, short x, short y);
+[v _OLED_string `(v ~T0 @X0 0 ef3`*uc`s`s ]
+"220
+[; ;./oled.h: 220: void OLED_write(void);
 [v _OLED_write `(v ~T0 @X0 0 ef ]
 "2477 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h: 2477:     struct {
@@ -2060,42 +2060,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "16
 [; ;main.c: 16:     Configure_Clock();
 [e ( _Configure_Clock ..  ]
-"20
-[; ;main.c: 20:     OLED_Init(0x3C);
+"17
+[; ;main.c: 17:     OLED_Init(0x3C);
 [e ( _OLED_Init (1 -> -> 60 `i `uc ]
-"21
-[; ;main.c: 21:     OLED_clear();
+"19
+[; ;main.c: 19:     OLED_clear();
 [e ( _OLED_clear ..  ]
-"22
-[; ;main.c: 22:     OLED_string("Hello World69!", 0, 0);
+"20
+[; ;main.c: 20:     OLED_string("Hello World69!", 0, 0);
 [e ( _OLED_string (3 , , :s 1C -> -> 0 `i `s -> -> 0 `i `s ]
-"23
-[; ;main.c: 23:     OLED_write();
+"21
+[; ;main.c: 21:     OLED_write();
 [e ( _OLED_write ..  ]
-"25
-[; ;main.c: 25:     while(1){
+"23
+[; ;main.c: 23:     while(1){
 [e :U 716 ]
 {
-"26
-[; ;main.c: 26:         LATCbits.LATC7 = 0;
+"24
+[; ;main.c: 24:         LATCbits.LATC7 = 0;
 [e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
+"25
+[; ;main.c: 25:         _delay((unsigned long)((1)*(32000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+"26
+[; ;main.c: 26:         LATCbits.LATC7 = 1;
+[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
 "27
 [; ;main.c: 27:         _delay((unsigned long)((1)*(32000000/4000000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
 "28
-[; ;main.c: 28:         LATCbits.LATC7 = 1;
-[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
-"29
-[; ;main.c: 29:         _delay((unsigned long)((1)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"30
-[; ;main.c: 30:     }
+[; ;main.c: 28:     }
 }
 [e :U 715 ]
 [e $U 716  ]
 [e :U 717 ]
-"34
-[; ;main.c: 34: }
+"32
+[; ;main.c: 32: }
 [e :UE 714 ]
 }
 [a 1C 72 101 108 108 111 32 87 111 114 108 100 54 57 33 0 ]

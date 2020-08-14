@@ -10443,12 +10443,8 @@ char _address = 0x78;
 
 void OLED_Init(char address);
 void OLED_command(char command);
-
 void OLED_write(void);
 void OLED_clear(void);
-
-
-
 void OLED_char(char character, short x, short y);
 void OLED_string(char* str, short x, short y);
 # 11 "main.c" 2
@@ -10458,10 +10454,8 @@ void main(void)
 {
     IO_First_Init();
     Configure_Clock();
-
-
-
     OLED_Init(0x3C);
+
     OLED_clear();
     OLED_string("Hello World69!", 0, 0);
     OLED_write();
