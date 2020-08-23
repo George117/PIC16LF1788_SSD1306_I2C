@@ -11,8 +11,7 @@
 
 
 
-/* Set the IO to known config
- */
+
 void IO_First_Init(void)
 {
     TRISA = 0x00;   
@@ -30,8 +29,6 @@ void IO_First_Init(void)
     INTCONbits.GIE=0;
 }
 
-/* Configure to 32MHZ
- */
 void Configure_Clock(void)
 {
     OSCCONbits.SCS0 = 0;
