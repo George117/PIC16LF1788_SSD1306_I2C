@@ -1028,81 +1028,81 @@ Version 4.0 HI-TECH Software Intermediate Code
 "15595
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16lf1788.h: 15595: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"15 config.c
-[; ;config.c: 15: void IO_First_Init(void)
+"16 config.c
+[; ;config.c: 16: void IO_First_Init(void)
 [v _IO_First_Init `(v ~T0 @X0 1 ef ]
-"16
-[; ;config.c: 16: {
+"17
+[; ;config.c: 17: {
 {
 [e :U _IO_First_Init ]
 [f ]
-"17
-[; ;config.c: 17:     TRISA = 0x00;
-[e = _TRISA -> -> 0 `i `uc ]
 "18
-[; ;config.c: 18:     TRISB = 0x00;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;config.c: 18:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
 "19
-[; ;config.c: 19:     TRISC = 0x00;
+[; ;config.c: 19:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+"20
+[; ;config.c: 20:     TRISC = 0x00;
 [e = _TRISC -> -> 0 `i `uc ]
-"21
-[; ;config.c: 21:     ANSELA = 0x00;
-[e = _ANSELA -> -> 0 `i `uc ]
 "22
-[; ;config.c: 22:     ANSELB = 0x00;
-[e = _ANSELB -> -> 0 `i `uc ]
+[; ;config.c: 22:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
 "23
-[; ;config.c: 23:     ANSELC = 0x00;
+[; ;config.c: 23:     ANSELB = 0x00;
+[e = _ANSELB -> -> 0 `i `uc ]
+"24
+[; ;config.c: 24:     ANSELC = 0x00;
 [e = _ANSELC -> -> 0 `i `uc ]
-"25
-[; ;config.c: 25:     PORTA = 0x00;
-[e = _PORTA -> -> 0 `i `uc ]
 "26
-[; ;config.c: 26:     PORTB = 0x00;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;config.c: 26:     PORTA = 0x00;
+[e = _PORTA -> -> 0 `i `uc ]
 "27
-[; ;config.c: 27:     PORTC = 0x00;
+[; ;config.c: 27:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"28
+[; ;config.c: 28:     PORTC = 0x00;
 [e = _PORTC -> -> 0 `i `uc ]
-"29
-[; ;config.c: 29:     INTCONbits.GIE=0;
-[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
 "30
-[; ;config.c: 30: }
+[; ;config.c: 30:     INTCONbits.GIE=0;
+[e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
+"31
+[; ;config.c: 31: }
 [e :UE 714 ]
 }
-"32
-[; ;config.c: 32: void Configure_Clock(void)
+"35
+[; ;config.c: 35: void Configure_Clock(void)
 [v _Configure_Clock `(v ~T0 @X0 1 ef ]
-"33
-[; ;config.c: 33: {
+"36
+[; ;config.c: 36: {
 {
 [e :U _Configure_Clock ]
 [f ]
-"34
-[; ;config.c: 34:     OSCCONbits.SCS0 = 0;
+"37
+[; ;config.c: 37:     OSCCONbits.SCS0 = 0;
 [e = . . _OSCCONbits 0 0 -> -> 0 `i `uc ]
-"35
-[; ;config.c: 35:     OSCCONbits.SCS1 = 0;
+"38
+[; ;config.c: 38:     OSCCONbits.SCS1 = 0;
 [e = . . _OSCCONbits 0 1 -> -> 0 `i `uc ]
-"39
-[; ;config.c: 39:     OSCCONbits.IRCF0 = 1;
-[e = . . _OSCCONbits 0 3 -> -> 1 `i `uc ]
-"40
-[; ;config.c: 40:     OSCCONbits.IRCF1 = 1;
-[e = . . _OSCCONbits 0 4 -> -> 1 `i `uc ]
-"41
-[; ;config.c: 41:     OSCCONbits.IRCF2 = 1;
-[e = . . _OSCCONbits 0 5 -> -> 1 `i `uc ]
 "42
-[; ;config.c: 42:     OSCCONbits.IRCF3 = 1;
+[; ;config.c: 42:     OSCCONbits.IRCF0 = 1;
+[e = . . _OSCCONbits 0 3 -> -> 1 `i `uc ]
+"43
+[; ;config.c: 43:     OSCCONbits.IRCF1 = 1;
+[e = . . _OSCCONbits 0 4 -> -> 1 `i `uc ]
+"44
+[; ;config.c: 44:     OSCCONbits.IRCF2 = 1;
+[e = . . _OSCCONbits 0 5 -> -> 1 `i `uc ]
+"45
+[; ;config.c: 45:     OSCCONbits.IRCF3 = 1;
 [e = . . _OSCCONbits 0 6 -> -> 1 `i `uc ]
-"53
-[; ;config.c: 53:     OSCTUNE = 0b00011111;
-[e = _OSCTUNE -> -> 31 `i `uc ]
 "56
-[; ;config.c: 56:     OSCCONbits.SPLLEN = 1;
+[; ;config.c: 56:     OSCTUNE = 0b00011111;
+[e = _OSCTUNE -> -> 31 `i `uc ]
+"59
+[; ;config.c: 59:     OSCCONbits.SPLLEN = 1;
 [e = . . _OSCCONbits 0 7 -> -> 1 `i `uc ]
-"57
-[; ;config.c: 57: }
+"60
+[; ;config.c: 60: }
 [e :UE 715 ]
 }

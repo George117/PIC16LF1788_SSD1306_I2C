@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.10 build 88905656 
-                                                                                               Sun Aug 23 12:39:25 2020
+                                                                                               Sun Aug 23 13:00:44 2020
 
 Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1 
      1                           	processor	16LF1788
@@ -1157,7 +1157,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   1138  07DA                     __ptext1:	
   1139 ;; *************** function _IO_First_Init *****************
   1140 ;; Defined at:
-  1141 ;;		line 15 in file "config.c"
+  1141 ;;		line 16 in file "config.c"
   1142 ;; Parameters:    Size  Location     Type
   1143 ;;		None
   1144 ;; Auto vars:     Size  Location     Type
@@ -1197,38 +1197,38 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   1173                           ; Regs used in _IO_First_Init: [status,2]
   1174                           
   1175                           
-  1176                           ;config.c: 17:     TRISA = 0x00;
+  1176                           ;config.c: 18:     TRISA = 0x00;
   1177  07DA  0021               	movlb	1	; select bank1
   1178  07DB  018C               	clrf	12	;volatile
   1179                           
-  1180                           ;config.c: 18:     TRISB = 0x00;
+  1180                           ;config.c: 19:     TRISB = 0x00;
   1181  07DC  018D               	clrf	13	;volatile
   1182                           
-  1183                           ;config.c: 19:     TRISC = 0x00;
+  1183                           ;config.c: 20:     TRISC = 0x00;
   1184  07DD  018E               	clrf	14	;volatile
   1185                           
-  1186                           ;config.c: 21:     ANSELA = 0x00;
+  1186                           ;config.c: 22:     ANSELA = 0x00;
   1187  07DE  0023               	movlb	3	; select bank3
   1188  07DF  018C               	clrf	12	;volatile
   1189                           
-  1190                           ;config.c: 22:     ANSELB = 0x00;
+  1190                           ;config.c: 23:     ANSELB = 0x00;
   1191  07E0  018D               	clrf	13	;volatile
   1192                           
-  1193                           ;config.c: 23:     ANSELC = 0x00;
+  1193                           ;config.c: 24:     ANSELC = 0x00;
   1194  07E1  018E               	clrf	14	;volatile
   1195                           
-  1196                           ;config.c: 25:     PORTA = 0x00;
+  1196                           ;config.c: 26:     PORTA = 0x00;
   1197  07E2  0020               	movlb	0	; select bank0
   1198  07E3  018C               	clrf	12	;volatile
   1199                           
-  1200                           ;config.c: 26:     PORTB = 0x00;
+  1200                           ;config.c: 27:     PORTB = 0x00;
   1201  07E4  018D               	clrf	13	;volatile
   1202                           
-  1203                           ;config.c: 27:     PORTC = 0x00;
+  1203                           ;config.c: 28:     PORTC = 0x00;
   1204  07E5  018E               	clrf	14	;volatile
   1205  07E6                     l656:	
   1206                           
-  1207                           ;config.c: 29:     INTCONbits.GIE=0;
+  1207                           ;config.c: 30:     INTCONbits.GIE=0;
   1208  07E6  138B               	bcf	11,7	;volatile
   1209  07E7                     l27:	
   1210  07E7  0008               	return
@@ -1238,7 +1238,7 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   1214  07CF                     __ptext2:	
   1215 ;; *************** function _Configure_Clock *****************
   1216 ;; Defined at:
-  1217 ;;		line 32 in file "config.c"
+  1217 ;;		line 35 in file "config.c"
   1218 ;; Parameters:    Size  Location     Type
   1219 ;;		None
   1220 ;; Auto vars:     Size  Location     Type
@@ -1278,32 +1278,32 @@ Microchip MPLAB XC8 C Compiler v2.10 (Free license) build 20190730164152 Og1
   1249                           ; Regs used in _Configure_Clock: [wreg]
   1250                           
   1251                           
-  1252                           ;config.c: 34:     OSCCONbits.SCS0 = 0;
+  1252                           ;config.c: 37:     OSCCONbits.SCS0 = 0;
   1253  07CF  0021               	movlb	1	; select bank1
   1254  07D0  1019               	bcf	25,0	;volatile
   1255                           
-  1256                           ;config.c: 35:     OSCCONbits.SCS1 = 0;
+  1256                           ;config.c: 38:     OSCCONbits.SCS1 = 0;
   1257  07D1  1099               	bcf	25,1	;volatile
   1258                           
-  1259                           ;config.c: 39:     OSCCONbits.IRCF0 = 1;
+  1259                           ;config.c: 42:     OSCCONbits.IRCF0 = 1;
   1260  07D2  1599               	bsf	25,3	;volatile
   1261                           
-  1262                           ;config.c: 40:     OSCCONbits.IRCF1 = 1;
+  1262                           ;config.c: 43:     OSCCONbits.IRCF1 = 1;
   1263  07D3  1619               	bsf	25,4	;volatile
   1264                           
-  1265                           ;config.c: 41:     OSCCONbits.IRCF2 = 1;
+  1265                           ;config.c: 44:     OSCCONbits.IRCF2 = 1;
   1266  07D4  1699               	bsf	25,5	;volatile
   1267                           
-  1268                           ;config.c: 42:     OSCCONbits.IRCF3 = 1;
+  1268                           ;config.c: 45:     OSCCONbits.IRCF3 = 1;
   1269  07D5  1719               	bsf	25,6	;volatile
   1270  07D6                     l660:	
   1271                           
-  1272                           ;config.c: 53:     OSCTUNE = 0b00011111;
+  1272                           ;config.c: 56:     OSCTUNE = 0b00011111;
   1273  07D6  301F               	movlw	31
   1274  07D7  0098               	movwf	24	;volatile
   1275  07D8                     l662:	
   1276                           
-  1277                           ;config.c: 56:     OSCCONbits.SPLLEN = 1;
+  1277                           ;config.c: 59:     OSCCONbits.SPLLEN = 1;
   1278  07D8  1799               	bsf	25,7	;volatile
   1279  07D9                     l30:	
   1280  07D9  0008               	return
@@ -1614,7 +1614,7 @@ BANK25              20      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.10 build 88905656 
-Symbol Table                                                                                   Sun Aug 23 12:39:25 2020
+Symbol Table                                                                                   Sun Aug 23 13:00:44 2020
 
              __CFG_CP$OFF 0000                        l30 07D9                        l27 07E7  
              __CFG_LVP$ON 0000                       l660 07D6                       l662 07D8  

@@ -10287,6 +10287,7 @@ void Configure_Clock(void);
 
 
 
+
 void IO_First_Init(void)
 {
     TRISA = 0x00;
@@ -10304,6 +10305,8 @@ void IO_First_Init(void)
     INTCONbits.GIE=0;
 }
 
+
+
 void Configure_Clock(void)
 {
     OSCCONbits.SCS0 = 0;
@@ -10315,7 +10318,7 @@ void Configure_Clock(void)
     OSCCONbits.IRCF1 = 1;
     OSCCONbits.IRCF2 = 1;
     OSCCONbits.IRCF3 = 1;
-# 53 "config.c"
+# 56 "config.c"
     OSCTUNE = 0b00011111;
 
 
